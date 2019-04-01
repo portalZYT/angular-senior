@@ -1,0 +1,10 @@
+<button (click)="showJavaArticles()">Java Articles</button>
+<button (click)="showAngularArticles()">Angular Articles</button>
+<button (click)="showFavoriteArticles()">Favorite Articles</button>
+<ul>
+  <li *ngFor="let article of articles | async">
+    {{article.id}} - {{article.title}} - {{article.category}}
+  </li>
+</ul>
+<div>kdnfvjdbj</div>
+<app-test-demo></app-test-demo>
